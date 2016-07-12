@@ -3,16 +3,16 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 
-class IndexController extends Controller
+class OrderController extends Controller
 {
     /**
-     * index method
+     * trending method
      *
      * @return Response
      */
-    public function index()
+    public function trending()
     {
-        return view('index');
+        return view('order.trending');
     }
 }
 

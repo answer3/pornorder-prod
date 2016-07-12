@@ -298,6 +298,34 @@ footer{
     overflow-x: hidden;
 }
 
+.pagination-block li{
+	
+}
+
+.pagination-block li a{
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 4px;
+	background-color: #67534F;
+	color: #ECE9E9;
+	border-color: #67534F;
+}
+
+.pagination-block li a:hover{
+	background-color: #67534F;
+	color: #ECE9E9;
+	border-color: #67534F;
+}
+
+.pagination-block li a.prev, 
+.pagination-block li a.next, 
+.pagination-block li.active a,
+.pagination-block li.active a:hover{
+	background-color: #990000;
+	border-color: #990000;
+	color: #130000;
+}
+
 @media(min-width:768px){
 	.page-container{
 		width: 100%;

@@ -15,3 +15,5 @@
     return view('welcome');
 });*/
 Route::get('/', 'IndexController@index');
+
+Route::get('/trending', 'OrderController@trending');
