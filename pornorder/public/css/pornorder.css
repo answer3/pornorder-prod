@@ -1,0 +1,365 @@
+/*!
+ * Start Bootstrap - 4 Col Portfolio HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    background-color: #000000;
+	color:white;
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+}
+
+.top-nav{
+	background-color: #2A2A2A;
+	border-color: #2A2A2A;
+	color:white;
+	border-radius: 0px;
+	margin-bottom: 5px;
+}
+.top-nav .container{
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 100%;
+}
+.top-nav .main-link{
+	color:white;
+	font-size:26px;
+	padding-left: 0px;
+}
+.top-nav .main-link:hover{
+	color:white
+}
+.seach-header{
+	width:100%
+}
+.search-header-container{
+	width:100%;
+}
+
+#nav-search-field{
+	background-color: #999999;
+	border: none;
+	color: white;
+}
+#nav-search-button{
+	background-color: #666666;
+	color: white;
+	border: #666666 1px solid;
+}
+
+#nav-login,#nav-signup,.nav-signup-divider{
+	float: left;
+	color: white !important;
+}
+#nav-login,#nav-signup:hover,.nav-signup-divider{
+	color: white;
+}
+#nav-login{
+	padding-left: 5px;
+}
+#nav-signup{
+	padding-right: 5px;
+}
+.nav-signup-divider{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.nav-plus-user{
+	font-size: 8px;
+	position:relative;
+	top:-2px
+}
+
+h2.container-header{
+	text-align: center;
+	font-size: 20px;
+	color: #999999;
+}
+
+h2.container-header .list-header-icon{
+	color: white;
+	font-size: 18px;
+	padding-left: 5px;
+}
+
+.order-item{}
+.main-thumb,.small-thumb-container{
+	width:100%;
+}
+.small-thumb-container{
+	height: 75px;
+	margin-bottom: 30px;
+	
+}
+.order-thumb{
+	background-size: cover;
+	background-position: center;
+	cursor: pointer;
+}
+.main-thumb{
+	height:225px;
+	position: relative;
+}
+.small-thumb{
+	float: left;
+	height: 100%;
+	width: 33.3333%;
+	position: relative;
+}
+.main-thumb-descr{
+	background-color: rgba(85,85,85,0.5);
+	color:#cccccc;
+}
+.main-thumb-descr p{
+	padding: 5px 10px 5px 10px;
+	margin: 0px;
+}
+
+.bottom-title{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+.small-thumb-info{
+	position: absolute;
+	right:0px;
+	width: 50%;
+	height: 100%;
+	background-color: rgba(85,85,85,0.5);
+	padding-top: 10px;
+}
+
+.small-thumb-info p{
+	margin: 0;
+	text-align: center;
+}
+
+.small-thumb-info p.count{
+	color: #cccccc;
+}
+
+.order-counter{
+	background-color: #2a2a2a;
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.order-counter span{
+	color:#7b7b7b;
+}
+.order-counter span span{
+	color: white;
+}
+.counter-likes{
+	float: left;
+}
+.counter-suggests .little-plus{
+	font-size: 8px;
+	position: relative;
+	top:-2px;
+	left:2px;
+}
+
+.counter-comments{
+	float: right;
+}
+
+.more-trendings{
+	float: right;
+	text-decoration: underline;
+	color:white;
+	font-size: 12px;
+	white-space: nowrap;
+}
+.more-trendings:hover{
+	color: white;
+}
+.create-order-inner{
+	text-align: center;
+	color:#cccccc;
+}
+.create-order-inner.inner-1, .create-order-inner.inner-3{
+	background-color: #2a2a2a;
+}
+.create-order-inner.inner-2, .create-order-inner.inner-4{
+	background-color: #181818;
+}
+.create-order-inner p, .create-order-inner h2{
+	margin: 0px;
+}
+.create-order-inner.inner-1 p{
+	font-size: 16px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.create-order-inner.inner-2 h2{
+	font-size: 22px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-weight: bold;
+}
+.create-order-inner.inner-3 p{
+	font-size: 14px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+.create-order-inner.inner-4 p{
+	font-size: 22px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-weight: bold;
+}
+
+.order-tag-container{
+	width: 100%;
+	background-color: #2a2a2a;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+}
+.order-tag-list{
+	background-color: #171717;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	line-height: 2;
+}
+.order-tag-list span{
+	white-space: nowrap;
+	background-color: #434343;
+	border-radius: 3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #9a9a9a;
+}
+
+.users-right-panel{
+	background-color: #2a2a2a;
+}
+
+footer{
+	text-align: center;
+	background-color: #2a2a2a;
+	margin-bottom: 0px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.users-right-panel p.users-cat-title{
+	text-align: center;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.top-users-category{
+	margin-bottom: 20px;
+}
+.users-right-panel{
+	color: #7a7a7a;
+}
+.users-right-panel .users-cat-list{
+	list-style-type: none;
+	padding-right: 10px;
+	padding-left: 10px;
+
+}
+.users-right-panel .avatar{
+	float: left;
+}
+.users-right-panel .avatar img{
+	width: 36px;
+	height: 36px;
+	border-radius: 18px;
+}
+
+.users-right-panel .avatar-container{
+	height: 36px;
+	margin-bottom: 5px;
+}
+.users-right-panel .username-container{
+	margin-left: 40px;
+	height:36px;
+}
+.users-right-panel .username-container p{
+	margin-bottom: 0px;
+	padding-top:7px;
+	padding-bottom: 7px;
+	white-space: nowrap;
+    overflow-x: hidden;
+}
+
+@media(min-width:768px){
+	.page-container{
+		width: 100%;
+		position: relative;
+	}
+	.users-right-panel{
+		position: absolute;
+		top:0px;
+		right: 0px;
+		bottom: 0px;
+		margin-bottom: 5px;
+		padding: 0px;
+	}
+	.search-div{
+		width: 50% !important;
+	}
+	.login-div{
+		width: 25% !important;
+	}
+	
+}
+@media(max-width:767px){
+	.users-right-panel{
+		display: none;
+	}
+	.more-trendings{
+		float: none !important;
+		margin-left: 20px;
+	}
+	.navbar-form{
+		border: none !important;
+		box-shadow: none !important; 
+	}
+}
+
+@media(max-width:767px) and (min-width:640px){
+	.order-item, .create-order{
+		width:50% !important;
+		float: left;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+@media(max-width:639px) and (min-width:569px){
+	.order-item, .create-order{
+		width:50% !important;
+		float: left;
+	}
+}
+
+@media(max-width:568px) and (min-width:421px){
+	.order-item, .create-order{
+		width:50% !important;
+		float: left;
+		/*margin: 0 auto !important;*/
+	}
+}
+
+@media(max-width:420px){
+	.order-item, .create-order{
+		width:300px !important;
+		margin: 0 auto !important;
+	}
+}
