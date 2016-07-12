@@ -299,6 +299,10 @@ footer{
 }
 
 .pagination-block li{
+	padding: 0px !important;
+}
+
+.pagination-block li{
 	
 }
 
@@ -390,4 +394,11 @@ footer{
 		width:300px !important;
 		margin: 0 auto !important;
 	}
+}
+
+@media(max-width:500px){
+	.pagination-block li a{
+	margin-left: 3px;
+	margin-right: 3px;
+	padding: 8px;
 }
