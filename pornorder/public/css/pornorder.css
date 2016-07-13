@@ -77,6 +77,12 @@ h2.container-header{
 	color: #999999;
 }
 
+h2.container-header.order-title{
+	text-align: left;
+	white-space: normal;
+    overflow: hidden;
+}
+
 h2.container-header .list-header-icon{
 	color: white;
 	font-size: 18px;
@@ -84,7 +90,11 @@ h2.container-header .list-header-icon{
 }
 
 .order-item{}
-.main-thumb,.small-thumb-container{
+.video-item{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.main-thumb,.small-thumb-container,.video-main{
 	width:100%;
 }
 .small-thumb-container{
@@ -92,15 +102,28 @@ h2.container-header .list-header-icon{
 	margin-bottom: 30px;
 	
 }
-.order-thumb{
+.order-thumb, .video-main{
 	background-size: cover;
 	background-position: center;
 	cursor: pointer;
 }
-.main-thumb{
+.main-thumb,.video-main{
 	height:225px;
 	position: relative;
 }
+
+.video-main span.duration{
+	position: absolute;
+    bottom: 10px;
+    right: 10px;
+	background-color: rgba(85,85,85,0.5);
+    color: #cccccc;
+	font-size: 12px;
+	line-height: 1;
+	padding: 5px 10px 5px 10px;
+	border-radius: 3px;
+}
+
 .small-thumb{
 	float: left;
 	height: 100%;
@@ -184,6 +207,7 @@ h2.container-header .list-header-icon{
 .create-order-inner.inner-1, .create-order-inner.inner-3{
 	background-color: #2a2a2a;
 }
+
 .create-order-inner.inner-2, .create-order-inner.inner-4{
 	background-color: #181818;
 }
@@ -240,6 +264,114 @@ h2.container-header .list-header-icon{
 	padding-left: 5px;
 	padding-right: 5px;
 	color: #9a9a9a;
+}
+
+.suggest-video-inner.inner-1{
+	background-color: #2a2a2a;
+	color: #9c9c9c;
+	position: relative;
+}
+.suggest-video-inner.inner-1 .order-owner{
+	float: right;
+	padding: 5px;
+	background-color: #181818;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+.suggest-video-inner.inner-1 .owner-container{
+	text-align: center;
+}
+
+.suggest-video-inner.inner-1 .order-owner .owner-name{
+	font-size: 9px;
+	margin-bottom: 0px;
+	background-color: #2a2a2a;
+	color:#9c9c9c;
+	padding: 5px;
+	line-height: 1;
+	margin-top: 5px;
+}
+
+.suggest-video-inner.inner-1 .order-owner img{
+	width: 56px;
+	height: 56px;
+	border-radius: 28px;
+}
+
+.suggest-video-inner.inner-1 p.text{
+	padding: 10px;
+    font-size: 18px;
+    line-height: 1.2;
+	margin: 0px;
+}
+
+.suggest-tags-container{
+	margin-bottom: 0px;
+}
+
+.suggest-tags-container .suggest-tags{
+	white-space: nowrap;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	overflow-x: hidden;
+}
+
+.suggest-video-inner.inner-2{
+	text-align: center;
+	background-color: #181818;
+	color: #9c9c9c;
+}
+
+.suggest-video-inner.inner-2 h2{
+	margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 18px;
+}
+
+.video-title{
+	color:#999999;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	overflow-x: hidden;
+	padding-left: 20px;
+	white-space: nowrap;
+}
+
+.video-details{
+	color:#990000;
+	margin-top: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 12px;
+}
+
+.video-details span.when{
+	float: right;
+}
+
+.comments-block{
+	height: 670px;
+	margin-top: 10px;
+    background-color: #ffffff;
+    color: black;
+    height: 560px;
+	display: table;
+	width: 100%;
+}
+h2.suggested-system-header{
+	text-align: right; 
+	white-space: nowrap;
+}
+
+h2.comments-header{
+	text-align: left; 
+}
+
+.comments-block p{
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .users-right-panel{
@@ -363,10 +495,13 @@ footer{
 		border: none !important;
 		box-shadow: none !important; 
 	}
+	h2.suggested-system-header,h2.comments-header, h2.order-title {
+		text-align: center !important; 
+	}
 }
 
 @media(max-width:767px) and (min-width:640px){
-	.order-item, .create-order{
+	.order-item, .create-order, .video-item, .suggest-video{
 		width:50% !important;
 		float: left;
 		padding-left: 3%;
@@ -375,14 +510,14 @@ footer{
 }
 
 @media(max-width:639px) and (min-width:569px){
-	.order-item, .create-order{
+	.order-item, .create-order, .video-item, .suggest-video{
 		width:50% !important;
 		float: left;
 	}
 }
 
 @media(max-width:568px) and (min-width:421px){
-	.order-item, .create-order{
+	.order-item, .create-order, .video-item, .suggest-video{
 		width:50% !important;
 		float: left;
 		/*margin: 0 auto !important;*/
@@ -390,7 +525,7 @@ footer{
 }
 
 @media(max-width:420px){
-	.order-item, .create-order{
+	.order-item, .create-order, .video-item, .suggest-video{
 		width:300px !important;
 		margin: 0 auto !important;
 	}
@@ -398,8 +533,9 @@ footer{
 
 @media(max-width:500px){
 	.pagination-block li a{
-	margin-left: 3px;
-	margin-right: 3px;
-	padding: 8px;
+		margin-left: 3px;
+		margin-right: 3px;
+		padding: 8px;
+		font-size: 12px;
 	}
 }

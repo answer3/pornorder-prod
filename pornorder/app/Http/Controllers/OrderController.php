@@ -17,8 +17,7 @@ class OrderController extends Controller
 	
 	public function order()
     {
-		die('test');
-        //return view('order.trending');
+        return view('order.order');
     }
 }
 
