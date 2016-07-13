@@ -14,5 +14,11 @@ class OrderController extends Controller
     {
         return view('order.trending');
     }
+	
+	public function order()
+    {
+		die('test');
+        //return view('order.trending');
+    }
 }
 
