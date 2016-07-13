@@ -91,7 +91,7 @@ h2.container-header .list-header-icon{
 
 .order-item{}
 .video-item{
-	margin-top: 10px;
+	margin-top: 0px;
 	margin-bottom: 10px;
 }
 .main-thumb,.small-thumb-container,.video-main{
@@ -301,7 +301,7 @@ h2.container-header .list-header-icon{
 
 .suggest-video-inner.inner-1 p.text{
 	padding: 10px;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.2;
 	margin: 0px;
 }
@@ -327,7 +327,7 @@ h2.container-header .list-header-icon{
 	margin: 0;
     font-size: 20px;
     font-weight: bold;
-    padding: 18px;
+    padding: 20px;
 }
 
 .video-title{
@@ -345,6 +345,7 @@ h2.container-header .list-header-icon{
 	padding-left: 20px;
 	padding-right: 20px;
 	font-size: 12px;
+	margin-bottom: 0px;
 }
 
 .video-details span.when{
