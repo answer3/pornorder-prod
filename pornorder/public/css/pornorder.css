@@ -353,11 +353,9 @@ h2.container-header .list-header-icon{
 }
 
 .comments-block{
-	height: 670px;
 	margin-top: 10px;
-    background-color: #ffffff;
     color: black;
-    height: 560px;
+    height: 540px;
 	display: table;
 	width: 100%;
 }
@@ -373,6 +371,8 @@ h2.comments-header{
 .comments-block p{
 	display: table-cell;
 	vertical-align: middle;
+	background-color: #ffffff;
+	padding-left: 10px;
 }
 
 .users-right-panel{
