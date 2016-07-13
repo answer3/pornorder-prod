@@ -16,7 +16,6 @@
 			<span>tag1</span>
 			<span>tag 2</span>
 			<span>tag three</span>
-			<span>more tag</span>
 		</div>	
 	</div>	
 	<div class="suggest-video-inner inner-2"><h2>SUGGEST A VIDEO</h2></div>
