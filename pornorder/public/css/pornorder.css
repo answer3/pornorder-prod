@@ -89,7 +89,10 @@ h2.container-header .list-header-icon{
 	padding-left: 5px;
 }
 
-.order-item{}
+.order-item,.create-order{
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
 .video-item{
 	margin-top: 0px;
 	margin-bottom: 10px;
@@ -98,7 +101,6 @@ h2.container-header .list-header-icon{
 	width:100%;
 }
 .small-thumb-container{
-	height: 75px;
 	margin-bottom: 30px;
 	
 }
@@ -107,9 +109,25 @@ h2.container-header .list-header-icon{
 	background-position: center;
 	cursor: pointer;
 }
+
+
 .main-thumb,.video-main{
-	height:225px;
-	position: relative;
+    position: relative;
+	height: 100% !important;
+}
+
+.main-thumb:before, .video-main:before,.small-thumb:before{
+	content: "";
+    display: block;
+	padding-top: 75%;
+}
+
+.main-thumb .contents,.small-thumb .contents{
+	position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .video-main span.duration{
@@ -216,10 +234,10 @@ h2.container-header .list-header-icon{
 }
 .create-order-inner.inner-1 p{
 	font-size: 16px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 10px;
-	padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .create-order-inner.inner-2 h2{
@@ -230,15 +248,15 @@ h2.container-header .list-header-icon{
 }
 .create-order-inner.inner-3 p{
 	font-size: 14px;
-	padding-top: 20px;
-	padding-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 .create-order-inner.inner-4 p{
 	font-size: 22px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	font-weight: bold;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-weight: bold;
 }
 
 .order-tag-container{
@@ -254,6 +272,7 @@ h2.container-header .list-header-icon{
 	padding-top: 3px;
 	padding-bottom: 3px;
 	line-height: 2;
+	font-size: 12px;
 }
 .order-tag-list span{
 	white-space: nowrap;
@@ -355,7 +374,7 @@ h2.container-header .list-header-icon{
 .comments-block{
 	margin-top: 10px;
     color: black;
-    height: 540px;
+    height: 450px;
 	display: table;
 	width: 100%;
 }
@@ -484,6 +503,8 @@ footer{
 	}
 	
 }
+
+
 @media(max-width:767px){
 	.users-right-panel{
 		display: none;
@@ -517,18 +538,20 @@ footer{
 	}
 }
 
-@media(max-width:568px) and (min-width:421px){
+@media(max-width:568px) and (min-width:451px){
 	.order-item, .create-order, .video-item, .suggest-video{
 		width:50% !important;
 		float: left;
-		/*margin: 0 auto !important;*/
 	}
 }
 
-@media(max-width:420px){
+@media(max-width:450px){
 	.order-item, .create-order, .video-item, .suggest-video{
 		width:300px !important;
-		margin: 0 auto !important;
+		margin: 10px auto !important;
+	}
+	.small-thumb-container {
+		margin-bottom: 85px;
 	}
 }
 

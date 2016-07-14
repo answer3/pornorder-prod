@@ -40,4 +40,13 @@
 	</div>
 		@include('elements.right_panel')	
 	</div>
+	<script>
+	var resizeItems =function(){ 
+		$('.order-thumb').each(function(){
+			var cw = $(this).width();
+			cw = Math.round((cw*3)/4);
+			$(this).css({'height':cw+'px'});
+		});
+	};
+	</script>
 	@endsection
