@@ -7,7 +7,8 @@
         @include('elements.order_title',['title'=>'New order title here'])
 
         <div class="row order-row-container">
-			@for ($i = 0; $i < 3; $i++)
+			@include('chunks.video.video_item',['when_video'=>true])
+			@for ($i = 0; $i < 2; $i++)
 				@include('chunks.video.video_item')
 			@endfor
 			

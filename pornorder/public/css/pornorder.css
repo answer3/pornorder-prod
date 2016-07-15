@@ -30,6 +30,22 @@ body {
 .top-nav .main-link:hover{
 	color:white
 }
+
+a.top-order-link,#nav-signup,#nav-login,.nav-signup-devider {
+    font-size: 12px;
+}
+
+a.top-order-link span{
+	font-size: 8px;
+    position: relative;
+    top: -5px;
+    left: -2px;
+    background-color: white;
+    padding: 1px;
+    border-radius: 2px;
+    line-height: 1;
+}
+
 .seach-header{
 	width:100%
 }
@@ -134,6 +150,18 @@ h2.container-header .list-header-icon{
 	position: absolute;
     bottom: 10px;
     right: 10px;
+	background-color: rgba(85,85,85,0.5);
+    color: #cccccc;
+	font-size: 12px;
+	line-height: 1;
+	padding: 5px 10px 5px 10px;
+	border-radius: 3px;
+}
+
+.video-main span.when-video{
+	position: absolute;
+    bottom: 10px;
+    left: 10px;
 	background-color: rgba(85,85,85,0.5);
     color: #cccccc;
 	font-size: 12px;
@@ -289,6 +317,8 @@ h2.container-header .list-header-icon{
 	background-color: #2a2a2a;
 	color: #9c9c9c;
 	position: relative;
+	max-height: 130px;
+	min-height: 130px;
 }
 .suggest-video-inner.inner-1 .order-owner{
 	float: right;
@@ -318,35 +348,53 @@ h2.container-header .list-header-icon{
 	border-radius: 28px;
 }
 
+.suggest-video-inner.inner-1 .text-container{
+	background-color: #2a2a2a;
+}
+
 .suggest-video-inner.inner-1 p.text{
-	padding: 10px;
-    font-size: 17px;
+	padding: 5px 10px 10px 10px;
+    font-size: 1vw;
     line-height: 1.2;
 	margin: 0px;
 }
 
-.suggest-tags-container{
-	margin-bottom: 0px;
+.suggest-video-inner.inner-1 p.text .readmore{
+	cursor: pointer;
 }
 
+.suggest-tags-container{
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+.suggest-tags-container{
+	max-height: 27px;
+    overflow: hidden;
+}
 .suggest-tags-container .suggest-tags{
-	white-space: nowrap;
-	padding-bottom: 6px;
-	padding-top: 6px;
-	overflow-x: hidden;
+	/*white-space: nowrap;*/
+	padding-bottom: 2px;
+	padding-top: 2px;
+	z-index: 99;
 }
 
 .suggest-video-inner.inner-2{
 	text-align: center;
-	background-color: #181818;
+	background-color: #2a2a2a;
 	color: #9c9c9c;
+	height: 3.5vw;
 }
 
-.suggest-video-inner.inner-2 h2{
+.suggest-video-inner.inner-2 div{
+	background-color: #181818;
+	color:#9c9c9c;
+    padding: 5px 20px 5px 20px;
+	height: 100%;
+}
+.suggest-video-inner.inner-2 div p{
 	margin: 0;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 20px;
+	font-weight: bold;
+    font-size: 1vw;
 }
 
 .video-title{
@@ -367,7 +415,7 @@ h2.container-header .list-header-icon{
 	margin-bottom: 0px;
 }
 
-.video-details span.when{
+.video-details span.when, .video-details span.video-by-user{
 	float: right;
 }
 
@@ -482,6 +530,40 @@ footer{
 	color: #130000;
 }
 
+@media(max-width:991px) and (min-width:768px){
+	.suggest-video-inner.inner-1 p.text{
+		font-size: 2vw;
+	}
+	.suggest-video-inner.inner-2{
+		height: 70px;
+	}
+	.suggest-video-inner.inner-2 p{
+		font-size: 20px !important;
+	}
+}
+@media(max-width:767px){
+	.suggest-video-inner.inner-1 p.text{
+		font-size: 15px;
+	}
+}
+
+@media(max-width:767px) and (min-width:600px){
+	.suggest-video-inner.inner-2{
+		height: 70px;
+	}
+	.suggest-video-inner.inner-2 p{
+		font-size: 20px !important;
+	}
+}
+
+@media(max-width:599px){
+	.suggest-video-inner.inner-2{
+		height: 70px;
+	}
+	.suggest-video-inner.inner-2 p{
+		font-size: 20px !important;
+	}
+}
 @media(min-width:768px){
 	.page-container{
 		width: 100%;

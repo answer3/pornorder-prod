@@ -28,10 +28,10 @@
 </head>
 
 <body>
-	
+
     <nav class="navbar top-nav navbar-inverse" role="navigation">
         <div class="container">
-			<div class="col-sm-3 col-xs-12">
+			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -42,7 +42,14 @@
                 <a class="navbar-brand main-link" href="#">PORNORDER</a>
             </div>
 			</div>
-			<div class="col-sm-6 col-xs-12 search-div collapse navbar-collapse bs-collapse">
+			<div class="col-lg-3 col-md-4 col-sm-3 col-xs-12 collapse navbar-collapse bs-collapse">
+				<ul class="nav navbar-nav top-left-links">
+					<li><a class="top-order-link" href="#">trending orders</a></li>
+					<li><a class="top-order-link" href="#">popular orders</a></li>
+					<li><a class="top-order-link" href="#">new orders <span>10</span></a></li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-md-5 col-sm-3 col-xs-12 search-div collapse navbar-collapse bs-collapse">
 			<form class="navbar-form seach-header" role="search">
 				<div class="input-group search-header-container">
 					<input type="text" id="nav-search-field" class="form-control" placeholder="">
@@ -52,13 +59,14 @@
 				</div>
 			</form>
 			</div>
-            <div class="col-sm-3 col-xs-12 login-div collapse navbar-collapse bs-collapse">
-				<ul class="nav navbar-nav navbar-right login-list">
+            <div class="col-lg-4 col-md-12 col-sm-3 col-xs-12 login-div collapse navbar-collapse bs-collapse">
+				<ul class="nav navbar-nav login-list">
+					<li><a class="top-order-link" href="#">my orders <span>100</span></a></li>
+					<li><a class="top-order-link" href="#">orders I follow <span>100</span></a></li>
 					<li><a id="nav-signup" href="#"><span class="glyphicon glyphicon-plus nav-plus-user" aria-hidden="true"></span><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Signup</a></li>
 					<li><a class="nav-signup-divider" href="#">|</a></li>
 					<li><a id="nav-login" href="#">Login <span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
 				</ul>
-				
 			</div>
         </div>
     </nav>
