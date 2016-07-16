@@ -12,11 +12,12 @@
 		<div class="text-container">
 			<p class="text">
 				<span class="dotted-text">Order description it is a long established fact that a reader will be distracted by the 
-					redable content of the page when looking at this layout. some other hidden string<span class="readmore"> ...</span>
+					redable content of the page when looking at this layout. some other hidden string
+					fbfkjbnk fdnbk rlmnrkn prtpbmr rtnlmr tknkrtn lrtnmrt knklrtlnk  rtnrkrtnrtm rtnlmtrmp <span class="readmore"> ...</span>
 				</span>
 				<span class="original-text" style="display: none;">Order description it is a long established fact that a reader will be distracted by the 
 					redable content of the page when looking at this layout. some other hidden string
-					fbfkjbnkfdnbk rlmnrknprtpbmr rtnlmrtknkrtn lrtnmrtknklrtlnk  rtnrkrtnrtm rtnlmtrmp
+					fbfkjbnk fdnbk rlmnrkn prtpbmr rtnlmr tknkrtn lrtnmrt knklrtlnk  rtnrkrtnrtm rtnlmtrmp
 				</span>
 			</p>
 		</div>
@@ -31,7 +32,7 @@
 			<span>tag verylongname</span>
 		</div>	
 	</div>
-	<div class="order-counter">
+	<div class="order-counter suggest-video-counters">
 		<span class="counter-likes"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 314</span>
 		<span class="counter-suggests"><span class="glyphicon glyphicon-plus little-plus" aria-hidden="true"></span><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 30</span>
 		<span class="counter-comments"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> 27</span>
@@ -63,7 +64,6 @@ $("span.readmore").mouseover(function() {
 });
 
 $(".inner-1 .text-container").mouseleave(function(){
-	console.log('leave');
 	$(".inner-1 p.text .dotted-text").show();
 	$(".inner-1 p.text .original-text").hide();
 	

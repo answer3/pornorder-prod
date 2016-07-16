@@ -317,8 +317,8 @@ h2.container-header .list-header-icon{
 	background-color: #2a2a2a;
 	color: #9c9c9c;
 	position: relative;
-	max-height: 130px;
-	min-height: 130px;
+	max-height: 150px;
+	min-height: 150px;
 }
 .suggest-video-inner.inner-1 .order-owner{
 	float: right;
@@ -378,11 +378,17 @@ h2.container-header .list-header-icon{
 	z-index: 99;
 }
 
+.suggest-video-counters{
+	padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
 .suggest-video-inner.inner-2{
 	text-align: center;
 	background-color: #2a2a2a;
 	color: #9c9c9c;
-	height: 3.5vw;
+	height: 4vw;
 }
 
 .suggest-video-inner.inner-2 div{
@@ -394,7 +400,7 @@ h2.container-header .list-header-icon{
 .suggest-video-inner.inner-2 div p{
 	margin: 0;
 	font-weight: bold;
-    font-size: 1vw;
+    font-size: 1.2vw;
 }
 
 .video-title{
@@ -528,6 +534,12 @@ footer{
 	background-color: #990000;
 	border-color: #990000;
 	color: #130000;
+}
+
+@media(max-width:1250px) and (min-width:992px){
+	.suggest-video-inner.inner-2 p{
+		font-size: 0.95vw !important;
+	}
 }
 
 @media(max-width:991px) and (min-width:768px){
