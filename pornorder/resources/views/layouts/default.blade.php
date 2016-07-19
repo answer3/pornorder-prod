@@ -16,8 +16,13 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/pornorder.css" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.dotdotdot/1.7.4/jquery.dotdotdot.js"></script>
+    <script type="text/javascript" src="/tokenfield/bootstrap-tokenfield.js" charset="UTF-8"></script>
+	<link href="/tokenfield/css/tokenfield-typeahead.css" type="text/css" rel="stylesheet">
+	<link href="/tokenfield/css/bootstrap-tokenfield.css" type="text/css" rel="stylesheet">
+	<link href="//code.jquery.com/ui/1.10.3/themes/ui-darkness/jquery-ui.css" type="text/css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

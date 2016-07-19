@@ -448,8 +448,12 @@ h2.comments-header{
 	padding-left: 10px;
 }
 
-.users-right-panel{
+.users-right-panel,.order-right-panel{
 	background-color: #2a2a2a;
+}
+
+.order-right-panel{
+	overflow-y: scroll;
 }
 
 footer{
@@ -460,17 +464,17 @@ footer{
     padding-bottom: 30px;
 }
 
-.users-right-panel p.users-cat-title{
+.users-right-panel p.users-cat-title,.order-right-panel p.order-cat-title{
 	text-align: center;
 	font-weight: bold;
 	padding-left: 10px;
 	padding-right: 10px;
 }
 
-.top-users-category{
+.top-users-category, .top-orders-category{
 	margin-bottom: 20px;
 }
-.users-right-panel{
+.users-right-panel, .order-right-panel{
 	color: #7a7a7a;
 }
 .users-right-panel .users-cat-list{
@@ -536,6 +540,129 @@ footer{
 	color: #130000;
 }
 
+.login-form-container,.signup-form-container, .add-order-form-container{
+	background-color: #2a2a2a;
+    padding: 15px 15px 0 15px;
+	color:#ffffff;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 20px;
+}
+
+
+.login-form-col{
+	display: table-cell;
+  	vertical-align: middle;
+	float: none;
+}
+.login-form-col.buttons-col{
+	vertical-align: bottom;
+}
+
+.login-form-container label, 
+.signup-form-container label, 
+.add-order-form-container label{
+	font-weight: 500 !important;
+}
+
+.login-form-container input[type="email"],
+.login-form-container input[type="text"],
+.login-form-container input[type="password"],
+.signup-form-container input[type="email"],
+.signup-form-container input[type="password"],
+.signup-form-container input[type="text"],
+.add-order-form-container input[type="text"]{
+	background-color: #000000;
+	border: 1px solid #000000;
+	color:white;
+}
+
+.signup-avatar-container{
+	position: relative;
+    vertical-align: middle;
+    width: 100%;
+    
+}
+
+
+
+.signup-avatar-container .avatar-holder{
+	background-color: black;
+    border-radius: 60px;
+    position: relative;
+    width: 120px;
+    text-align: center;
+	font-style: italic;
+	height: 120px;
+	padding-top: 35px;
+	margin: 0 auto;
+}
+
+.login-form-container .login-button{
+	background-color: #2a2a2a;
+	border: solid 1px #000000;
+	width: 100%;
+	color:white;
+}
+
+.login-form-container .login-via{
+	text-align: center;
+}
+
+.login-form-container .main-button-col, 
+.signup-form-container .main-button-col{
+	padding: 0;
+	margin-top: 20px;
+}
+
+.login-form-container .main-button-container, 
+.signup-form-container .main-button-container,
+.add-order-form-container .main-button-container
+{
+	background-color: black; 
+	color: white;
+	text-align: center;
+	font-size: 16px;
+	padding: 10px 10px 5px 10px;
+}
+
+.register-link-container{
+	margin-top: 10px;
+}
+
+.login-form-container .signin-link,
+.signup-form-container .signup-link,
+.add-order-form-container .save-order-link, 
+.add-order-form-container .cancel-order-link, .register-link{
+	white-space: nowrap;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.login-form-container .signin-link:hover,
+.signup-form-container .signup-link:hover,
+.add-order-form-container .save-order-link:hover, 
+.add-order-form-container .cancel-order-link:hover, .register-link:hover{
+	color: white;
+	text-decoration: none;
+}
+
+.add-order-form-container .main-button-container{
+	font-size: 1.5em;
+	padding: 20px 20px 10px 20px;
+}
+
+.add-order-form-container .add-order-descr{
+	font-size: 12px;
+	margin-top: 10px;
+}
+.add-order-form-container .add-order-descr span{
+	text-decoration: underline;
+}
+
 @media(max-width:1250px) and (min-width:992px){
 	.suggest-video-inner.inner-2 p{
 		font-size: 0.95vw !important;
@@ -581,7 +708,7 @@ footer{
 		width: 100%;
 		position: relative;
 	}
-	.users-right-panel{
+	.users-right-panel, .order-right-panel{
 		position: absolute;
 		top:0px;
 		right: 0px;
@@ -589,6 +716,7 @@ footer{
 		margin-bottom: 5px;
 		padding: 0px;
 	}
+	
 	.search-div{
 		width: 50% !important;
 	}
@@ -600,7 +728,7 @@ footer{
 
 
 @media(max-width:767px){
-	.users-right-panel{
+	.users-right-panel,.order-right-panel{
 		display: none;
 	}
 	.more-trendings{
@@ -613,6 +741,9 @@ footer{
 	}
 	h2.suggested-system-header,h2.comments-header, h2.order-title {
 		text-align: center !important; 
+	}
+	.login-form-col{
+		float: left;
 	}
 }
 
@@ -630,12 +761,19 @@ footer{
 		width:50% !important;
 		float: left;
 	}
+	
+	.add-order-form-container .main-button-container{
+		font-size: 1em;
+	}
 }
 
 @media(max-width:568px) and (min-width:451px){
 	.order-item, .create-order, .video-item, .suggest-video{
 		width:50% !important;
 		float: left;
+	}
+	.add-order-form-container .main-button-container{
+		font-size: 1em;
 	}
 }
 
@@ -646,6 +784,16 @@ footer{
 	}
 	.small-thumb-container {
 		margin-bottom: 85px;
+	}
+	
+	.add-order-form-container .main-button-container{
+		font-size: 0.7em;
+	}
+}
+
+@media(max-width:450px) and (min-width:320px){
+	.add-order-form-container .main-button-container{
+		font-size: 0.5em;
 	}
 }
 
