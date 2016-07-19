@@ -18,7 +18,7 @@
 				<div class="col-sm-12 col-md-12 col-xs-12 login-form-container">
 				<form id="register-form">
 					<div class="row">
-					<div class="col-sm-12 col-md-12 col-xs-12">
+					<div class="col-lg-4 col-sm-12 col-md-12 col-xs-12">
 						<div class="form-group">
 							<label for="register-email">Enter Email</label>
 							<input type="email" class="form-control" id="register-email" placeholder="">
@@ -28,7 +28,7 @@
 							<input type="password" class="form-control" id="register-password" placeholder="">
 						</div>	
 					</div>
-					<div class="col-sm-12 col-md-12 col-xs-12">
+					<div class="col-lg-4 col-sm-12 col-md-12 col-xs-12">
 						<div class="form-group">
 							<label for="register-name">Enter Name</label>
 							<input type="text" class="form-control" id="register-name" placeholder="">
@@ -38,7 +38,7 @@
 							<input type="text" class="form-control" id="register-tags" placeholder="">
 						</div>	
 					</div>
-					<div class="col-sm-12 col-md-12 col-xs-12">
+					<div class="col-lg-4 col-sm-12 col-md-12 col-xs-12">
 						<div class="row login-row">
 							<div class="col-sm-5 col-md-5 col-xs-12 login-form-col buttons-col">
 								<p>
