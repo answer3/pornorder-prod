@@ -7,9 +7,7 @@
         <div class="row">
 			<div class="col-lg-12">
 				<h2 class="container-header">
-					<span style="float: left;">LOG IN</span>
-					<span>OR</span>
-					<span style="float: right;">SIGN UP</span>
+					<span style="float: left;">SIGN UP</span>
 				</h2>
 			</div>
 		</div>

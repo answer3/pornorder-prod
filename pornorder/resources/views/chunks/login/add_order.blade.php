@@ -22,11 +22,11 @@
 					<div class="form-group">
 						<label for="order-video-example">Add video exmaple</label>
 						<p class="add-order-descr">Submit at least one video. Video should be example of content you are looking for</p>
-						<input type="text" class="form-control" id="order-video-example" placeholder="">
+						<input type="text" class="form-control video-example" id="order-video-example" placeholder="">
 					</div>
-					<div class="form-group">
+					<div class="form-group video-example-dummy" style="display: none; ">
 						<p class="add-order-descr">Would you like to add another one?</p>
-						<input type="text" class="form-control" id="order-video-example2" placeholder="">
+						<input type="text" class="form-control" placeholder="">
 					</div>
 					<div class="col-sm-6 col-md-6 col-xs-6" style="padding: 0">
 						<div class="col-sm-12">
@@ -52,7 +52,17 @@
 					delay: 100
 				},
 				showAutocompleteOnFocus: true
-			})
+			});
+			
+			$(document).on('blur','input.video-example:last', function(){
+				console.log('this');
+				if($(this).val().length>0){			
+					var elem = $('.video-example-dummy').clone();
+					var input = elem.find('input');
+					input.addClass('video-example');
+					elem.insertBefore('.video-example-dummy').removeClass('video-example-dummy').show();
+				}
+			});
 </script>
 
 

@@ -45,11 +45,24 @@ span[role="status"]{
 	display: none;
 }
 .tokenfield.focus {
-  border-color: #66afe9;
+	outline: 0;
+	box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(153,0,0,0.6);
+  /*border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);*/
 }
+
+.ui-state-focus{
+	border:none !important;
+	background: none !important;
+	cursor: pointer;
+}
+
+.ui-widget-content{
+	background: #000000 !important;
+}
+
 .tokenfield .token {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -63,12 +76,12 @@ span[role="status"]{
   color:white;
   white-space: nowrap;
   margin: -1px 5px 5px 0;
-  height: 22px;
+  height: 26px;
   vertical-align: top;
   cursor: default;
 }
 .tokenfield .token:hover {
-  border-color: #b9b9b9;
+  border-color: #2a2a2a;
 }
 .tokenfield .token.active {
   border-color: #52a8ec;
@@ -108,12 +121,14 @@ span[role="status"]{
   text-overflow: ellipsis;
   padding-left: 4px;
   vertical-align: top;
+  padding-bottom: 2px;
+  padding-top: 2px;
 }
 .tokenfield .token .close {
   font-family: Arial;
   display: inline-block;
   line-height: 100%;
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.49em;
   margin-left: 5px;
   float: none;
@@ -152,7 +167,7 @@ span[role="status"]{
 }
 .tokenfield.disabled .token:hover {
   cursor: not-allowed;
-  border-color: #d9d9d9;
+  border-color: #2a2a2a;
 }
 .tokenfield.disabled .token:hover .close {
   cursor: not-allowed;
