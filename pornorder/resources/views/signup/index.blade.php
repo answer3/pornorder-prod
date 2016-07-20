@@ -16,7 +16,7 @@
 		<div class="row">
 			<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
 				<div class="col-sm-12 col-md-12 col-xs-12 login-form-container">
-				<form id="register-form">
+				<form id="register-form" class="dropzone">
 					<div class="row">
 					<div class="col-lg-4 col-sm-12 col-md-12 col-xs-12">
 						<div class="form-group">
@@ -36,6 +36,15 @@
 						<div class="form-group">
 							<label for="register-tags" style="white-space: nowrap;">Enter tags</label>
 							<input type="text" class="form-control" id="register-tags" placeholder="">
+							<script>
+								$('#register-tags').tokenfield({
+									autocomplete: {
+										source: ['tag1','tag2','tag3','tag4'],
+										delay: 100
+									},
+									showAutocompleteOnFocus: true
+								});
+							</script>
 						</div>	
 					</div>
 					<div class="col-lg-4 col-sm-12 col-md-12 col-xs-12">
@@ -56,8 +65,12 @@
 							<div class="col-sm-5 col-md-5 col-xs-12 login-form-col signup-avatar-container">
 								<div class="avatar-holder">
 								<p>drag and<br>drop here</p>
+								<!--<input type="file" name="file" id="avatar">-->
 								</div>
 							</div>
+							<script>
+								/*$("div.avatar-holder").dropzone({ url: "/file/post" });*/
+							</script>
 						</div>	
 					</div>	
 					</div>

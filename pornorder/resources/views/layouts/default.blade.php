@@ -23,6 +23,8 @@
 	<link href="/tokenfield/css/tokenfield-typeahead.css" type="text/css" rel="stylesheet">
 	<link href="/tokenfield/css/bootstrap-tokenfield.css" type="text/css" rel="stylesheet">
 	<link href="//code.jquery.com/ui/1.10.3/themes/ui-darkness/jquery-ui.css" type="text/css" rel="stylesheet">
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.js"></script>
+	<link rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.css">-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
