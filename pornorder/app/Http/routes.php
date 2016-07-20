@@ -23,3 +23,5 @@ Route::get('/o/{id}', 'OrderController@order');
 Route::get('/login', 'LoginController@index');
 
 Route::get('/signup', 'SignupController@index');
+
+Route::get('/videos/{tag}', 'VideoController@index');

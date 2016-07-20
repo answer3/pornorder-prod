@@ -687,6 +687,19 @@ footer{
 	background-color: #2a2a2a;
 }
 
+.dropdown-menu.typeahead{
+	background-color: #2a2a2a !important;
+	border-color: white !important;
+}
+
+.dropdown-menu.typeahead li a{
+	color: white !important;
+}
+
+.dropdown-menu.typeahead li.active a{
+	color: white !important;
+	background-color: #2a2a2a;
+}
 @media(max-width:1250px) and (min-width:992px){
 	.suggest-video-inner.inner-2 p{
 		font-size: 0.95vw !important;
