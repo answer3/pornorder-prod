@@ -701,6 +701,16 @@ footer{
 	color: white !important;
 	background-color: #2a2a2a;
 }
+
+.order-save-buttons-container .main-button-container a{
+	white-space: normal !important;
+}
+
+.order-save-buttons-container .main-button-container a span{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
 @media(max-width:1250px) and (min-width:992px){
 	.suggest-video-inner.inner-2 p{
 		font-size: 0.95vw !important;

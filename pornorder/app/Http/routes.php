@@ -20,6 +20,8 @@ Route::get('/trending', 'OrderController@trending');
 
 Route::get('/o/{id}', 'OrderController@order');
 
+Route::get('/o/{id}/edit', 'OrderController@edit');
+
 Route::get('/login', 'LoginController@index');
 
 Route::get('/signup', 'SignupController@index');

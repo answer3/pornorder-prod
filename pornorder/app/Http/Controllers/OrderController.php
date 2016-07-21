@@ -19,5 +19,10 @@ class OrderController extends Controller
     {
         return view('order.order');
     }
+	
+	public function edit()
+    {
+        return view('order.edit');
+    }
 }
 
