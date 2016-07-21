@@ -57,6 +57,7 @@ span[role="status"]{
 	border:none !important;
 	background: none !important;
 	cursor: pointer;
+	background-color: #990000 !important;
 }
 
 .ui-widget-content{

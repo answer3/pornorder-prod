@@ -54,13 +54,13 @@
 					<p><a class="btn btn-default login-button" href="#" role="button">google</a></p>
 				</div>
 				</div>
-				<div class="col-sm-4 col-md-3 col-xs-2"></div>
-				<div class="col-sm-5  col-md-7 col-xs-8 main-button-col">
+				<div class="col-sm-4 col-md-2 col-xs-2"></div>
+				<div class="col-sm-4 col-md-8 col-xs-8 main-button-col">
 					<div class="main-button-container">
 						<a class="signin-link" href="#">SIGN ME IN</a>
 					</div>
 				</div>
-				<div class="col-sm-3  col-md-2 col-xs-2"></div>
+				<div class="col-sm-4 col-md-2 col-xs-2"></div>
 				</div>
 			</div>
 			<div class="col-lg-6 col-sm-12 col-md-6 col-xs-12 signup-mobile">

@@ -455,6 +455,7 @@ h2.comments-header{
 
 .order-right-panel{
 	overflow-y: hidden;
+	max-width: 360px;
 }
 
 .order-right-panel .order-item{
@@ -849,9 +850,17 @@ footer{
 	}
 }
 
-@media(max-width:450px) and (min-width:320px){
+@media(max-width:359px){
 	.add-order-form-container .main-button-container{
 		font-size: 0.5em;
+		padding: 5px;
+	}
+}
+
+@media(max-width:450px) and (min-width:360px){
+	.add-order-form-container .main-button-container{
+		font-size: 0.65em;
+		padding: 10px;
 	}
 }
 
