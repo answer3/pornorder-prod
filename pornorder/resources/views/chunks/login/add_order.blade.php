@@ -29,14 +29,14 @@
 						<input type="text" class="form-control" placeholder="">
 					</div>
 					<div class="col-sm-6 col-md-6 col-xs-6" style="padding: 0">
-						<div class="col-sm-12">
+						<div class="col-sm-12" style="padding-left: 0;">
 						<div class="main-button-container">
-							<a class="save-order-link" href="#">SAVE THE ORDER</a>
+							<a class="save-order-link" href="#"><span class="non-mobile-title">SAVE THE ORDER</span> <span class="mobile-title">SAVE</span></a>
 						</div>
 						</div>	
 					</div>
 					<div class="col-sm-6 col-md-6 col-xs-6" style="padding: 0">
-						<div class="col-sm-12">
+						<div class="col-sm-12" style="padding-right: 0;">
 						<div class="main-button-container">
 							<a class="cancel-order-link" href="#">CANCEL</a>
 						</div>

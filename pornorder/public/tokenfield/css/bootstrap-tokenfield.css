@@ -58,10 +58,14 @@ span[role="status"]{
 	background: none !important;
 	cursor: pointer;
 	background-color: #990000 !important;
+	border-radius: 0px !important;
 }
 
 .ui-widget-content{
 	background: #000000 !important;
+	border-color: #000000 !important;
+	border-radius: 0px 0px 15px 15px !important;
+    padding-bottom: 10px !important;
 }
 
 .tokenfield .token {
@@ -85,8 +89,7 @@ span[role="status"]{
   border-color: #2a2a2a;
 }
 .tokenfield .token.active {
-  border-color: #52a8ec;
-  border-color: rgba(82, 168, 236, 0.8);
+  border-color: white;
 }
 .tokenfield .token.duplicate {
   border-color: #ebccd1;

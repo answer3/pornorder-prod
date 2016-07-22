@@ -28,16 +28,26 @@
 		
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 add-order-form-container order-save-buttons-container">		
 					<div class="col-sm-6 col-md-6 col-xs-6" style="padding: 0">
-						<div class="col-sm-12">
+						<div class="col-sm-12" style="padding-left: 0;">
 						<div class="main-button-container">
-							<a class="save-order-link" href="#"><p><span style="float: left;" class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> SAVE CHANGES</p></a>
+							<a class="save-order-link" href="#">
+								<p><span style="float: left;" class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> 
+									<span class="non-mobile-title">SAVE CHANGES</span>
+									<span class="mobile-title" >SAVE</span>
+								</p>
+							</a>
 						</div>
 						</div>	
 					</div>
 					<div class="col-sm-6 col-md-6 col-xs-6" style="padding: 0">
-						<div class="col-sm-12">
+						<div class="col-sm-12" style="padding-right: 0;">
 						<div class="main-button-container">
-							<a class="cancel-order-link" href="#"><p><span style="float: left;" class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> DISCART CHANGES</p></a>
+							<a class="cancel-order-link" href="#">
+								<p><span style="float: left;" class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> 
+									<span class="non-mobile-title">DISCART CHANGES</span>
+									<span class="mobile-title" >DISCART</span>
+								</p>
+							</a>
 						</div>
 						</div>
 					</div>

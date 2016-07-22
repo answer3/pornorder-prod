@@ -72,8 +72,8 @@
     </nav>
 	@yield('content')
 	<footer>
-            <div class="row">
-                <div class="col-lg-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <p>Copyright &copy; Pornorder 2016</p>
                 </div>
             </div>

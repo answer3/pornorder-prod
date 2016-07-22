@@ -18,8 +18,8 @@ body {
 	margin-bottom: 5px;
 }
 .top-nav .container{
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
 	width: 100%;
 }
 .top-nav .main-link{
@@ -469,7 +469,7 @@ footer{
 	background-color: #2a2a2a;
 	margin-bottom: 0px;
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 .users-right-panel p.users-cat-title,.order-right-panel p.order-cat-title{
@@ -690,7 +690,14 @@ footer{
 
 .dropdown-menu.typeahead{
 	background-color: #2a2a2a !important;
-	border-color: white !important;
+    border-color: #2a2a2a !important;
+    margin-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+    padding-bottom: 10px;
+}
+
+.search-div.navbar-collapse.in {
+    overflow-y: visible !important;
 }
 
 .dropdown-menu.typeahead li a{
@@ -699,14 +706,14 @@ footer{
 
 .dropdown-menu.typeahead li.active a{
 	color: white !important;
-	background-color: #2a2a2a;
+	background-color: #990000;
 }
 
 .order-save-buttons-container .main-button-container a{
 	white-space: normal !important;
 }
 
-.order-save-buttons-container .main-button-container a span{
+.order-save-buttons-container .main-button-container a span.glyphicon{
 	padding-left: 5px;
 	padding-right: 5px;
 }
@@ -857,20 +864,25 @@ footer{
 	
 	.add-order-form-container .main-button-container{
 		font-size: 0.75em;
-	}
-}
-
-@media(max-width:359px){
-	.add-order-form-container .main-button-container{
-		font-size: 0.5em;
 		padding: 5px;
 	}
 }
 
-@media(max-width:450px) and (min-width:360px){
-	.add-order-form-container .main-button-container{
-		font-size: 0.65em;
-		padding: 10px;
+@media(max-width:991px){
+	.non-mobile-title{
+		display: none;
+	}
+	.mobile-title{
+		display: block;
+	}
+}
+
+@media(min-width:992px){
+	.non-mobile-title{
+		display: block;
+	}
+	.mobile-title{
+		display: none;
 	}
 }
 
