@@ -109,6 +109,7 @@
 		<div class="row">
 			@include('chunks.login.add_order')
 		</div>
+		@include('elements.mobile_order_panel')
 	</div>
 		@include('elements.right_order_panel')	
 	</div>

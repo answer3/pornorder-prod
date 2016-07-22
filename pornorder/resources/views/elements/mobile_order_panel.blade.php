@@ -1,8 +1,24 @@
-<div class="col-lg-3 col-sm-3 col-md-3 sidebar order-right-panel">
-		<div class="top-orders-category">
+<div class="row mobile-order-tabs">
+			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
+				<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 mobile-order-tab-item related-tab active">
+				<h2 class="container-header">
+					<span>TRENDING</span>
+				</h2>
+				</div>
+			</div>	
+			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
+				<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 mobile-order-tab-item new-tab">
+				<h2 class="container-header">
+					<span>NEW</span>
+				</h2>
+				</div>	
+			</div>
+</div>
+<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 mobile-order-panel">
+		<div class="top-orders-category related-orders">
 			<p class="order-cat-title">RELATED TRENDING ORDERS</p>
 			
-			@for ($i = 0; $i < 3; $i++)
+			@for ($i = 0; $i < 4; $i++)
 				<div class="col-lg-12 col-md-12 col-sm-12 order-item">
 				<div class="order-thumb main-thumb" style="background-image: url('http://cdn.europosters.eu/image/750/posters/football-girls-i12197.jpg');">
 					<div class="contents">
@@ -23,10 +39,10 @@
             </div>
 			@endfor
 		</div>
-		<div class="top-orders-category">
+		<div class="top-orders-category new-orders">
 			<p class="order-cat-title">RELATED NEW ORDERS</p>
 			
-			@for ($i = 0; $i < 3; $i++)
+			@for ($i = 0; $i < 4; $i++)
 				<div class="col-lg-12 col-md-12 col-sm-12 order-item">
 				<div class="order-thumb main-thumb" style="background-image: url('http://cdn.europosters.eu/image/750/posters/football-girls-i12197.jpg');">
 					<div class="contents">
@@ -49,22 +65,16 @@
 		</div>
 	</div>
 <script>
-	$(document).ready(function(){
-		var panelHeight = $('.order-right-panel').height();
-		var orderItemHeight = $('.order-right-panel .order-item').height();
-		
-		var ratio = panelHeight/orderItemHeight;
-		var elementsInCat = Math.floor((ratio-2)/2);
-		
-		$('.order-right-panel .top-orders-category').each(function(){
-			var index = 1;
-			$(this).find('.order-item').each(function(){
-				if(index>elementsInCat){
-					$(this).hide();
-				}
-				index++;
-			});
+$('.mobile-order-tabs .related-tab').click(function(){
+			$(this).addClass('active');
+			$('.mobile-order-tabs .new-tab').removeClass('active');
+			$('.related-orders').show();
+			$('.new-orders').hide();
 		});
-	});
-</script>	
-
+		$('.mobile-order-tabs .new-tab').click(function(){
+			$(this).addClass('active');
+			$('.mobile-order-tabs .related-tab').removeClass('active');
+			$('.related-orders').hide();
+			$('.new-orders').show();
+		});
+</script>

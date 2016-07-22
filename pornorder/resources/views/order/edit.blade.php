@@ -7,8 +7,10 @@
         @include('elements.order_title',['title'=>'ORDER EDITING - Order title'])
 
         @include('chunks.order.update_order_form')
+		@include('elements.mobile_order_panel')
 	</div>
-		@include('elements.right_order_panel')	
+		@include('elements.right_order_panel')
+		@include('chunks.video.video_edit_popup')
 	</div>
 	@endsection
 

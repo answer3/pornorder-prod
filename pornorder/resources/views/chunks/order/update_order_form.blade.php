@@ -63,13 +63,20 @@
 			});
 			
 			$(document).on('blur','input.video-example:last', function(){
-				console.log('this');
 				if($(this).val().length>0){			
 					var elem = $('.video-example-dummy').clone();
 					var input = elem.find('input');
 					input.addClass('video-example');
 					elem.insertBefore('.video-example-dummy').removeClass('video-example-dummy').show();
+					
+					$('#edit-video #video-url').val($(this).val());
+					var pos = $(this).offset();
+					var topPos = pos.top-($('#edit-video').height()/2);
+					$('#edit-video').offset({top:topPos}).show();
 				}
+			});
+			$(document).on('click','#edit-video .main-button-container',function(){
+				$('#edit-video').hide();
 			});
 </script>
 

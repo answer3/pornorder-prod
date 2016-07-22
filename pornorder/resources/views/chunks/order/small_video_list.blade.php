@@ -2,13 +2,13 @@
 <div class="row order-row-container">
 	@include('chunks.video.video_item',['when_video'=>true])
 	@for ($i = 0; $i < 3; $i++)
-		@include('chunks.video.video_item')
+		@include('chunks.video.video_item',['edit_links'=>true])
 	@endfor
 </div>
 		
 <div class="row order-row-container">
 	@for ($i = 0; $i < 4; $i++)
-		@include('chunks.video.video_item')
+		@include('chunks.video.video_item',['edit_links'=>true])
 	@endfor
 </div>
 		
