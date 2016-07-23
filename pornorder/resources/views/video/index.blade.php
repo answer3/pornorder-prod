@@ -39,6 +39,7 @@
         </div>
 		
 		@include('elements.pagination')
+		@include('elements.mobile_order_panel')
 	</div>
 		@include('elements.right_order_panel')	
 	</div>

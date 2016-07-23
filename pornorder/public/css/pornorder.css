@@ -813,6 +813,8 @@ footer{
 	margin-bottom: 10px;
 	margin-top: 10px;
 	padding-top: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 @media(max-width:1250px) and (min-width:992px){
@@ -979,6 +981,12 @@ footer{
 	.add-order-form-container .main-button-container{
 		font-size: 0.75em;
 		padding: 5px;
+	}
+}
+
+@media(max-width:370px){
+	.mobile-order-panel .order-item{
+		width: 100% !important;
 	}
 }
 
