@@ -718,11 +718,11 @@ footer{
 	text-decoration: underline;
 }
 
-.mobile-sign-tab-item,.mobile-order-tab-item{
+.mobile-sign-tab-item,.mobile-order-tab-item,.mobile-video-tab-item{
 	cursor:pointer;
 }
 
-.mobile-sign-tab-item.active, .mobile-order-tab-item.active{
+.mobile-sign-tab-item.active, .mobile-order-tab-item.active, .mobile-video-tab-item.active{
 	background-color: #2a2a2a;
 }
 
@@ -841,9 +841,12 @@ footer{
 	.non-mobile-sign-tabs{
 		display: none;
 	}
-	.mobile-sign-tabs,.mobile-order-tabs{
+	.mobile-sign-tabs,.mobile-order-tabs,.mobile-video-tabs{
 		margin-top: 20px;
 		display: block;
+	}
+	.mobile-video-tabs{
+		margin-bottom: 5px;
 	}
 	.signup-mobile,.new-orders{
 		display: none;
@@ -897,7 +900,7 @@ footer{
 	.non-mobile-sign-tabs{
 		display: block;
 	}
-	.mobile-sign-tabs, .mobile-order-tabs{
+	.mobile-sign-tabs, .mobile-order-tabs,.mobile-video-tabs{
 		display: none;
 	}
 	
