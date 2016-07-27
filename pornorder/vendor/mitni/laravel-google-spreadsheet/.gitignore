@@ -1,0 +1,4 @@
+sandbox
+vendor
+composer.lock
+*.swp
