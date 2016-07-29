@@ -27,3 +27,8 @@ Route::get('/login', 'LoginController@index');
 Route::get('/signup', 'SignupController@index');
 
 Route::get('/videos/{tag}', 'VideoController@index');
+
+Route::get('/admin/start_sync', function () {
+    $exitCode = Artisan::call('google:sync');
+	echo 'Sync finished';
+});

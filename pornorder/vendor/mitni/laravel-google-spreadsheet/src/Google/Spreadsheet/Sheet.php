@@ -62,12 +62,14 @@ class Google_Spreadsheet_Sheet {
 		}
 		if(is_array($condition)){
 			$result = array();
-			foreach($this->items as $row){
+			foreach($this->items as $rowNum=>$row){
 				$invalid = false;
 				foreach($condition as $key => $value){
 					if($row[$key] !== $value){ $invalid = true; }
 				}
+ 
 				if($invalid){ continue; }
+				$row['original_row_num'] = $rowNum;
 				array_push($result, $row);
 			}
 			return $result;

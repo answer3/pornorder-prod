@@ -3,12 +3,17 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Video extends Model
 {
+	use SoftDeletes;
+	
     protected $fillable = [
         'video_url', 'title', 'tube_id','user_id'
     ];
+	
+	protected $dates = ['deleted_at'];
 	
 	protected $touches = ['order'];
 	
@@ -26,4 +31,5 @@ class Video extends Model
     {
         return $this->belongsTo('App\Order');
     }
+	
 }
